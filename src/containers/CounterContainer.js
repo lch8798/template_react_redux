@@ -5,7 +5,7 @@ import Counter from './../components/Counter';
 
 export default function CounterContainer(props) {
     const dispatch = useDispatch();
-    const number = useSelector((store) => store.counter.number);
+    const number = useSelector((state) => state.counter.number);
 
     const handleIncrement = () => {
         dispatch(increment());

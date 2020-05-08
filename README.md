@@ -1,13 +1,18 @@
 # Framework
+
 > React
-- CRA
+
+-   CRA
 
 > Redux
-- ducks pattern
+
+-   ducks pattern
+-   redux-thunk
 
 > Styled Components
-- CSS-in-JS
-- normalize.css
-- reset.css
 
-##### The last update is 2019-10-05.
+-   CSS-in-JS
+-   normalize.css
+-   reset.css
+
+##### The last update is 2020-05-08.
