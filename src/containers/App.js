@@ -1,30 +1,18 @@
-import React, { Component } from 'react';
-import Counter from './Counter';
+import React from 'react';
+import CounterContainer from './CounterContainer';
 import styled from 'styled-components';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount() {
-    
-  }
-
-  render() {
+export default function App() {
     return (
-      <AppWrap className="App">
-        <Counter />
-      </AppWrap>
+        <AppWrap className="App">
+            <CounterContainer />
+        </AppWrap>
     );
-  }
 }
 
-export default App;
-
 const AppWrap = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `;

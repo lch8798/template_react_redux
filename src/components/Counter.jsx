@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Counter = ({ number, onIncrement, onDecrement }) => {
-  return (
-    <CounterWrap className="Counter">
-      <CounterNumber>{number}</CounterNumber>
-      <CounterButton onClick={onIncrement}>+</CounterButton>
-      <CounterButton onClick={onDecrement}>-</CounterButton>
-    </CounterWrap>
-  )
-}
+export default function Counter(props) {
+    const { number, onIncrement, onDecrement } = props;
 
-export default Counter;
+    return (
+        <CounterWrap className="Counter">
+            <CounterNumber>{number}</CounterNumber>
+            <CounterButton onClick={onIncrement}>+</CounterButton>
+            <CounterButton onClick={onDecrement}>-</CounterButton>
+        </CounterWrap>
+    );
+}
 
 const CounterWrap = styled.div`
     padding: 10px;
