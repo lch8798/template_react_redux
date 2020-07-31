@@ -1,4 +1,4 @@
-# Framework
+# Configuration
 
 > React
 
